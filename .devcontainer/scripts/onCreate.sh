@@ -4,8 +4,7 @@
 echo `date +"[%Y/%m/%d %H:%M:%S]"` 'onCreateCommand will begin✨' \
   && echo '[working-dir]:' `pwd`
 
-ls /workspaces/.codespaces/.persistedshare
-cat ~/.bashrc
+# cat ~/.bashrc
 ## setup nvm
 # \. "$NVM_DIR/nvm.sh" && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 # nvm install 14 && nvm install 16 \
