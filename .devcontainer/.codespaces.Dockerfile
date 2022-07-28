@@ -4,12 +4,13 @@
 ARG VARIANT="jammy"
 FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 
-USER vscode
 # [Optional] Uncomment this section to install additional OS packages.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends build-essential
 
+RUN cd /bin/ && rm sh && ln -s /bin/bash /bin/sh
 # install homebrew
+USER vscode
 # Dazzle does not rebuild a layer until one of its lines are changed. Increase this counter to rebuild this layer.
 ENV TRIGGER_REBUILD=2
 
@@ -21,3 +22,6 @@ ENV HOMEBREW_NO_AUTO_UPDATE=1
 
 # # install fish
 RUN brew install fish
+
+# nvm
+RUN /bin/bash -c "$(curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh)"

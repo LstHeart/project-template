@@ -13,13 +13,12 @@ fi
 curl https://raw.githubusercontent.com/skywind3000/z.lua/master/z.lua > ~/.config/fish/conf.d/z.lua \
 && echo "lua ~/.config/fish/conf.d/z.lua --init fish | source" > ~/.config/fish/conf.d/z.fish
 
-
-fish -c "fisher install jorgebucaran/nvm.fish \
-  && fisher install PatrickF1/fzf.fish
-  && fisher install franciscolourenco/done \
-  && fisher install jorgebucaran/autopair.fish \
-  && fisher install andreiborisov/sponge \
-  && echo y | fisher install ilancosman/tide@v5"
+fish -c "fisher install jorgebucaran/nvm.fish"
+fish -c "fisher install PatrickF1/fzf.fish"
+fish -c "fisher install franciscolourenco/done "
+fish -c "fisher install jorgebucaran/autopair.fish"
+fish -c "fisher install andreiborisov/sponge"
+fish -c "echo y | fisher install ilancosman/tide@v5"
 
 # git-completion
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash \
