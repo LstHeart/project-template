@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # the script execute when a dev container is created (execute once)
-echo `date +"[%Y/%m/%d %H:%M:%S]"` 'onCreateCommand begin✨' \
+echo `date +"[%Y/%m/%d %H:%M:%S]"` 'onCreateCommand will begin✨' \
   && echo '[working-dir]:' `pwd`
 
 ## setup nvm
@@ -17,5 +17,5 @@ echo `date +"[%Y/%m/%d %H:%M:%S]"` 'onCreateCommand begin✨' \
 #     gh git-lfs \
 #     ranger
 
-echo `date +"[%Y/%m/%d %H:%M:%S]"` 'onCreateCommand done🎉'
+echo `date +"[%Y/%m/%d %H:%M:%S]"` 'onCreateCommand has done🎉'
 exit
