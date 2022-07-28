@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # A command to run each time the container is successfully started (execute everytime)
 echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postStartCommand will begin✨' \

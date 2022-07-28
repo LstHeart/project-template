@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # executes inside the container after onCreateCommand(execute at least once)
 echo `date +"[%Y/%m/%d %H:%M:%S]"` 'updateContentCommand will begin✨' \

@@ -14,10 +14,10 @@
   "remoteUser": "vscode",
   // life scripts
   "initializeCommand": "sudo chmod -R 755 .devcontainer/scripts/ && mkdir -p .devcontainer/logs",
-  "onCreateCommand": "sh .devcontainer/scripts/onCreate.sh > .devcontainer/logs/onCreate.log",
-  "updateContentCommand": "sh .devcontainer/scripts/updateContent.sh > .devcontainer/logs/updateContent.log",
-  "postCreateCommand": "sh .devcontainer/scripts/postCreate.sh > .devcontainer/logs/postCreate.log",
-  "postStartCommand": "sh .devcontainer/scripts/postStart.sh > .devcontainer/logs/postStart.log",
+  "onCreateCommand": "source .devcontainer/scripts/onCreate.sh > .devcontainer/logs/onCreate.log",
+  "updateContentCommand": "source .devcontainer/scripts/updateContent.sh > .devcontainer/logs/updateContent.log",
+  "postCreateCommand": "source .devcontainer/scripts/postCreate.sh > .devcontainer/logs/postCreate.log",
+  "postStartCommand": "source .devcontainer/scripts/postStart.sh > .devcontainer/logs/postStart.log",
   "features": {
     // "docker-in-docker": "latest"
   },
