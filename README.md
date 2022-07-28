@@ -13,6 +13,7 @@ path: `/workspaces/.codespaces/.persistedshare/creation.log`
 
 ### Dotfiles
 path: `/workspaces/.codespaces/.persistedshare/dotfiles`
+
 log: `/workspaces/.codespaces/.persistedshare/dotfiles/dotfiles.log`
 
 ### ScriptsLog

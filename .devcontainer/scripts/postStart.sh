@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/sh
 
 # A command to run each time the container is successfully started (execute everytime)
 echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postStartCommand will begin✨' \
@@ -8,6 +8,7 @@ echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postStartCommand will begin✨' \
 DofilesLog='/workspaces/.codespaces/.persistedshare/dotfiles/dotfiles.log'
 [ -f $DofilesLog ] && cp -f $DofilesLog .devcontainer/logs/
 
+# cat ~/.bashrc
 ## update project dependencies and so on
 # echo 'update dependencies' && ni
 # nr serve
