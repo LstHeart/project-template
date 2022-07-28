@@ -6,7 +6,7 @@ echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postStartCommand will begin✨' \
 
 # copy dotfiles log if exist
 DofilesLog='/workspaces/.codespaces/.persistedshare/dotfiles/dotfiles.log'
-[ -f $DofilesLog ] cp -f $DofilesLog .devcontainer/logs/
+[ -f $DofilesLog ] && cp -f $DofilesLog .devcontainer/logs/
 
 ## update project dependencies and so on
 # echo 'update dependencies' && ni
