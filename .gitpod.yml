@@ -1,15 +1,14 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - before: |
-      echo 'before script'
-      sleep 20
+      sudo chmod -R 755 .gitpod/scripts/
+      mkdir -p .gitpod/logs
+      source .gitpod/scripts/before.sh > .gitpod/logs/before.log
     init: | # runs during prebuild
-      echo 'init script'
-      sleep 30
+      source .gitpod/scripts/init.sh > .gitpod/logs/init.log
     command: | # runs everytime when start
-      echo 'start script'
-      sleep 20
-
+      source .gitpod/scripts/command.sh > .gitpod/logs/command.log
+      # extra commands
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 # ports:
 #   - port: 3000
