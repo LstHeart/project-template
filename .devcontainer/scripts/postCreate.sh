@@ -6,23 +6,11 @@ echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postCreateCommand will begin✨' \
 
 # ln -sf $HOME/config $PWD/.devcontainer/config && set +x
 
-## setup fish
-# if [ ! -d ~/.config/fish/conf.d ]; then
-#   mkdir -p ~/.config/fish/conf.d
-# fi
-# curl https://raw.githubusercontent.com/skywind3000/z.lua/master/z.lua > ~/.config/fish/conf.d/z.lua \
-# && echo "lua ~/.config/fish/conf.d/z.lua --init fish | source" > ~/.config/fish/conf.d/z.fish
-
-# fish -c "fisher install jorgebucaran/nvm.fish"
-# fish -c "fisher install PatrickF1/fzf.fish"
-# fish -c "fisher install franciscolourenco/done "
-# fish -c "fisher install jorgebucaran/autopair.fish"
-# fish -c "fisher install andreiborisov/sponge"
-# fish -c "echo y | fisher install ilancosman/tide@v5"
-
-# # git-completion
-# wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash \
-#   -O $HOME/.git-completion.bash
+# 重构时要保留的数据
+ln -sf $PWD/.devcontainer/config/.zlua $HOME/.zlua && set +x
+ln -sf $PWD/.devcontainer/config/fish_history $HOME/.local/share/fish/fish_history && set +x
+ln -sf $PWD/.devcontainer/config/.bash_history $HOME/.bash_history && set +x
+ln -sf $PWD/.devcontainer/config/.nirc $HOME/.nirc && set +x
 
 echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postCreateCommand has done🎉'
 exit
