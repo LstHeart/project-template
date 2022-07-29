@@ -15,7 +15,7 @@
   // life scripts
   "initializeCommand": "sudo chmod -R 755 .devcontainer/scripts/ && mkdir -p .devcontainer/logs",
   "onCreateCommand": ".devcontainer/scripts/onCreate.sh > .devcontainer/logs/onCreate.log",
-  "updateContentCommand": ".devcontainer/scripts/updateContent.sh > .devcontainer/logs/updateContent.log",
+  "updateContentCommand": ".devcontainer/scripts/updateContent.sh >> .devcontainer/logs/updateContent.log",
   "postCreateCommand": ".devcontainer/scripts/postCreate.sh > .devcontainer/logs/postCreate.log",
   "postStartCommand": ".devcontainer/scripts/postStart.sh > .devcontainer/logs/postStart.log",
   "features": {
