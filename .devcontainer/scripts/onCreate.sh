@@ -25,5 +25,9 @@ fish -c "echo y | fisher install ilancosman/tide@v5"
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash \
   -O $HOME/.git-completion.bash
 
+# config chezmoi
+chezmoi init $CHEZMOI_DOTFILES
+chezmoi completion fish > ~/.config/fish/completions/chezmoi.fish
+
 echo `date +"[%Y/%m/%d %H:%M:%S]"` 'onCreateCommand has done🎉'
 exit
