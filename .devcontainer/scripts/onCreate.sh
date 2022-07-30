@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# 软件包的配置推荐放在此处进行一次性初始化
 # the script execute when a dev container is created (execute once)
 echo `date +"[%Y/%m/%d %H:%M:%S]"` 'onCreateCommand will begin✨' \
   && echo '[working-dir]:' `pwd`
