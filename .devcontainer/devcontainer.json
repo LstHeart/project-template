@@ -44,6 +44,15 @@
         "gitlens.showWelcomeOnInstall": false,
         "gitlens.showWhatsNewAfterUpgrades": false
       }
+    },
+    "codespaces":{
+      "repositories": {
+        "LstHeart/chezmoi-dotfiles":{
+          "permissions": {
+            "contents ": "write"
+          }
+        }
+      }
     }
   }
 }
