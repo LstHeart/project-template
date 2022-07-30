@@ -6,6 +6,6 @@ echo `date +"[%Y/%m/%d %H:%M:%S]"` 'updateContentCommand will begin✨' \
 
 # update softs
 sudo apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y update && brew update && brew upgrade
+    && sudo apt-get -y update && brew update && brew upgrade
 echo `date +"[%Y/%m/%d %H:%M:%S]"` 'updateContentCommand has done🎉'
 exit
