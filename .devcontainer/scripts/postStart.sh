@@ -10,5 +10,5 @@ echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postStartCommand will begin✨' \
 # nr serve
 # nr build
 ## ...
-fish
+# fish
 echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postStartCommand has done🎉'
