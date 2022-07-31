@@ -4,8 +4,6 @@
 echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postCreateCommand will begin✨' \
   && echo '[working-dir]:' `pwd`
 
-# ln -sf $HOME/config $PWD/.devcontainer/config && set +x
-
 # 重构时要保留的数据
 CONFIG_DIR='$PWD/.devcontainer/config'
 # zlua config
