@@ -12,6 +12,4 @@ echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postStartCommand will begin✨' \
 ## ...
 # fish
 
-# config chezmoi
-chezmoi init $GITHUB_USER
 echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postStartCommand has done🎉'

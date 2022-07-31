@@ -6,7 +6,8 @@ echo `date +"[%Y/%m/%d %H:%M:%S]"` 'updateContentCommand will begin✨' \
 
 # update softs
 sudo apt update && export DEBIAN_FRONTEND=noninteractive && sudo apt upgrade -y \
-    && brew update && brew upgrade
+    && brew update && brew upgrade \
+    && chezmoi update
 
 # clean unused
 sudo apt autoremove -y && sudo apt clean
