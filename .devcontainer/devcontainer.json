@@ -21,7 +21,7 @@
   "customizations": {
     "codespaces": {
       "repositories": {
-        "LstHeart/chezmoi-dotfiles": {
+        "LstHeart/dotfiles": {
           "permissions": {
             "contents": "write"
           }
