@@ -6,6 +6,10 @@ echo `date +"[%Y/%m/%d %H:%M:%S]"` 'onCreateCommand will begin✨' \
 
 # install global npms
 npm install -g @devcontainers/cli @antfu/ni vsce yo
+cat > ~/.nirc <<EOF
+defaultAgent=npm
+globalAgent=npm
+EOF
 
 ## setup fish
 if [ ! -d ~/.config/fish/conf.d ]; then
