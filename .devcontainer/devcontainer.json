@@ -18,26 +18,39 @@
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
   // Configure tool-specific properties.
+  // "customizations": {
+  //   // Configure properties specific to VS Code.
+  //   "vscode": {
+  //     // Add the IDs of extensions you want installed when the container is created.
+  //     "extensions": [
+  //       "dbaeumer.vscode-eslint"
+  //     ],
+  //     "settings": {
+  //       "terminal.integrated.defaultProfile.linux": "fish",
+  //       "extensions.ignoreRecommendations": true,
+  //       "gitlens.showWelcomeOnInstall": false,
+  //       "gitlens.showWhatsNewAfterUpgrades": false
+  //     }
+  //   },
+  //   "codespaces":{
+  //     "repositories": {
+  //       "LstHeart/chezmoi-dotfiles":{
+  //         "permissions": {
+  //           "issues": "write"
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
   "customizations": {
-    // Configure properties specific to VS Code.
-    "vscode": {
-      // Add the IDs of extensions you want installed when the container is created.
-      "extensions": [
-        "dbaeumer.vscode-eslint"
-      ],
-      "settings": {
-        "terminal.integrated.defaultProfile.linux": "fish",
-        "extensions.ignoreRecommendations": true,
-        "gitlens.showWelcomeOnInstall": false,
-        "gitlens.showWhatsNewAfterUpgrades": false
-      }
-    },
-    "codespaces":{
+    "codespaces": {
       "repositories": {
         "LstHeart/chezmoi-dotfiles":{
-          "permissions": "write-all"
-        }
+          "permissions": {
+            "issues": "write"
+          }
       }
     }
   }
+}
 }
