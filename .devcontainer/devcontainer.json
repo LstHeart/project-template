@@ -23,7 +23,7 @@
       "repositories": {
         "LstHeart/chezmoi-dotfiles": {
           "permissions": {
-            "content": "write/read"
+            "issue": "write/read"
           }
         }
       }
