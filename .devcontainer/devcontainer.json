@@ -8,7 +8,7 @@
   // "remoteUser": "vscode",
   // life scripts
   // "initializeCommand": "sudo chmod -R 755 .devcontainer/scripts/",
-  "onCreateCommand": ".devcontainer/scripts/onCreate.sh",
+  // "onCreateCommand": ".devcontainer/scripts/onCreate.sh",
   "updateContentCommand": ".devcontainer/scripts/updateContent.sh",
   "postCreateCommand": ".devcontainer/scripts/postCreate.sh",
   "postStartCommand": ".devcontainer/scripts/postStart.sh",

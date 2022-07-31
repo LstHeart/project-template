@@ -13,7 +13,5 @@ echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postStartCommand will begin✨' \
 # fish
 
 # config chezmoi
-# chezmoi init $GITHUB_USER
-# chezmoi completion fish > ~/.config/fish/completions/chezmoi.fish
-#  sh -c "$(curl -fsSL https://raw.githubusercontent.com/LstHeart/dotfiles/dennis/install.sh)"
+chezmoi init $GITHUB_USER
 echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postStartCommand has done🎉'

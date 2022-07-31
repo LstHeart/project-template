@@ -5,8 +5,8 @@ echo `date +"[%Y/%m/%d %H:%M:%S]"` 'updateContentCommand will begin✨' \
   && echo '[working-dir]:' `pwd`
 
 # update softs
-sudo apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && sudo apt-get -y update && brew update && brew upgrade
+sudo apt update && export DEBIAN_FRONTEND=noninteractive && sudo apt upgrade -y \
+    && brew update && brew upgrade
 
 # clean unused
 sudo apt autoremove -y && sudo apt clean
