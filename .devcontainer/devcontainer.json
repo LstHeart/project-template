@@ -22,9 +22,7 @@
     "codespaces": {
       "repositories": {
         "LstHeart/chezmoi-dotfiles": {
-          "permissions": {
-            "issue": "write/read"
-          }
+          "permissions": "write-all"
         }
       }
     },
