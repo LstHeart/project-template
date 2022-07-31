@@ -20,7 +20,7 @@ curl https://raw.githubusercontent.com/skywind3000/z.lua/master/z.lua > ~/.confi
 
 fish -c "fisher install jorgebucaran/nvm.fish"
 fish -c "fisher install PatrickF1/fzf.fish"
-fish -c "fisher install franciscolourenco/done "
+fish -c "fisher install franciscolourenco/done"
 fish -c "fisher install jorgebucaran/autopair.fish"
 fish -c "fisher install andreiborisov/sponge"
 fish -c "echo y | fisher install ilancosman/tide@v5"

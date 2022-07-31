@@ -6,7 +6,7 @@ echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postCreateCommand will begin✨' \
 
 # 重构时要保留的数据
 CONFIG_DIR=`$PWD/.devcontainer/config`
-ls -al $HOME
+fish -c "ls -al $HOME"
 # # zlua config
 # [ ! -f $CONFIG_DIR/.zlua ] && cp -af $HOME/.zlua $CONFIG_DIR/.zlua \
 #   && ln -sf $CONFIG_DIR/.zlua $HOME/.zlua
