@@ -5,7 +5,7 @@ echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postCreateCommand will begin✨' \
   && echo '[working-dir]:' `pwd`
 
 # 重构时要保留的数据
-CONFIG_DIR=`$PWD/.devcontainer/config`
+CONFIG_DIR=$PWD/.devcontainer/config
 ln -sf $CONFIG_DIR/.zlua $HOME/.zlua
 ln -sf $CONFIG_DIR/fish_history $HOME/.local/share/fish/fish_history
 ln -sf $CONFIG_DIR/.bash_history $HOME/.bash_history
