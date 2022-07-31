@@ -29,8 +29,8 @@ fish -c "fisher install andreiborisov/sponge"
 fish -c "echo y | fisher install ilancosman/tide@v5"
 
 # config chezmoi
-chezmoi init $CHEZMOI_DOTFILES
-chezmoi completion fish > ~/.config/fish/completions/chezmoi.fish
+# chezmoi init $CHEZMOI_DOTFILES
+# chezmoi completion fish > ~/.config/fish/completions/chezmoi.fish
 
 echo `date +"[%Y/%m/%d %H:%M:%S]"` 'onCreateCommand has done🎉'
 exit
