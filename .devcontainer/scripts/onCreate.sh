@@ -1,11 +1,14 @@
 #!/bin/sh
-# 软件包的配置推荐放在此处进行一次性初始化
+
 # the script execute when a dev container is created (execute once)
+# 只会在 未开启prebuilds 且 new codespace的时候执行一次
+# 软件包的配置推荐放在此处进行一次性初始化
 echo `date +"[%Y/%m/%d %H:%M:%S]"` 'onCreateCommand will begin✨' \
   && echo '[working-dir]:' `pwd`
 
 # install global npms
 npm install -g @devcontainers/cli @antfu/ni vsce yo
+#
 cat > ~/.nirc <<EOF
 defaultAgent=npm
 globalAgent=npm
@@ -24,10 +27,6 @@ fish -c "fisher install franciscolourenco/done"
 fish -c "fisher install jorgebucaran/autopair.fish"
 fish -c "fisher install andreiborisov/sponge"
 fish -c "echo y | fisher install ilancosman/tide@v5"
-
-# git-completion
-wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash \
-  -O $HOME/.git-completion.bash
 
 # config chezmoi
 chezmoi init $CHEZMOI_DOTFILES

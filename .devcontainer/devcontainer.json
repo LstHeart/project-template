@@ -35,9 +35,7 @@
     "codespaces":{
       "repositories": {
         "LstHeart/chezmoi-dotfiles":{
-          "permissions": {
-            "contents ": "write"
-          }
+          "permissions": "write-all"
         }
       }
     }
