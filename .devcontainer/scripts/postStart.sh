@@ -11,4 +11,8 @@ echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postStartCommand will begin✨' \
 # nr build
 ## ...
 # fish
+
+# config chezmoi
+# chezmoi init $CHEZMOI_DOTFILES
+# chezmoi completion fish > ~/.config/fish/completions/chezmoi.fish
 echo `date +"[%Y/%m/%d %H:%M:%S]"` 'postStartCommand has done🎉'
